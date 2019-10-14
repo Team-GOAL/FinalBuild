@@ -1,0 +1,24 @@
+.title{
+    color: #000000;
+    font-family: "Gothic A1", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1;
+}
+#path{
+    text-align: center;
+    font-family: "Gothic A1", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    outline: 0;
+}
+
+#path a, a:visited {
+    color: #0088cc;
+    text-decoration: none;
+}
+
+#path a:hover {
+    color: #005580;
+    text-decoration: underline;
+}

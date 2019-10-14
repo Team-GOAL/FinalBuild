@@ -1,0 +1,49 @@
+.slangPage .container .inner-content ul li{
+    font-family: "Gothic A1", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+}
+
+.teach-slang{
+    font-family: "Gothic A1", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+}
+
+#slang-tabs{
+    font-size: 16px;
+}
+
+.message-box{
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #444;
+}
+
+.single-work:after{
+    position:absolute;
+    top:100%;
+    bottom:0;
+    left:0;
+    right:0;
+    white-space:pre-wrap;
+    overflow:hidden;
+    background-color:rgba(0,0,0,0.6);
+    color:#fff;
+    padding:0 8px;
+    opacity:0;
+    content:attr(data-text);
+    transition:0.5s;
+}
+
+.single-work:hover:after{
+    opacity:1;
+    top:0;
+    padding:8px;
+}
+

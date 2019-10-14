@@ -1,0 +1,346 @@
+.vission-and-mission {
+    margin-top: 10px;
+}
+.nav-pills {
+    border: 1px solid #5d8dff;
+}
+.nav-pills > li {
+    width: 50%;
+    padding: 10px;
+    float: left;
+    margin: 0 !important;
+}
+
+.vission-and-mission .nav-pills > li > a.active {
+    border: none;
+    background: #5d8dff;
+    color: #ffffff;
+}
+
+.vission-and-mission .nav-pills > li > a {
+    padding: 12px 15px;
+    color: #5d8dff;
+}
+
+.process-accordion{
+    -webkit-box-shadow: 0px 2px 16px 0px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 2px 16px 0px rgba(204,204,204,1);
+    box-shadow: 0px 2px 16px 0px rgba(204,204,204,1);
+}
+
+.process-accordion .card{
+    border: none;
+}
+.process-accordion .card-header{
+    padding: 0px;
+}
+.process-accordion .card-header h5{
+    padding: 0px;
+}
+.process-accordion .card-header h5 a{
+    padding: 15px 30px;
+    display: block;
+    font-size: 22px;
+    line-height: 26px;
+}
+.process-accordion .card-header h5 a i{
+    float: right;
+}
+
+.process-accordion .card.active .card-header{
+    background: #5d8dff;
+}
+.process-accordion .card.active .card-header h5 a{
+    color: #ffffff;
+}
+
+.process-accordion .card-header h5 a:hover{
+    background: #596ea6;
+    color: #ffffff;
+}
+.inner-acc {
+    position: relative;
+}
+
+.inner-acc p{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0px;
+    padding-bottom: 30px;
+}
+.inner-acc ul{
+    position: relative;
+    z-index: 2;
+}
+.inner-acc ul li{
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+    line-height: 36px;
+    padding: 0px 15px;
+    border-radius: 5px;
+}
+
+.inner-acc ul li:hover{
+    background: #596ea6;
+    color: #ffffff;
+}
+
+.inner-acc ul li i{
+    padding-right: 10px;
+}
+
+.inner-acc i.fa-search{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 240px;
+    z-index: 0;
+    opacity: 0.1;
+}
+.inner-acc i.fa-bullseye{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 240px;
+    z-index: 0;
+    opacity: 0.1;
+}
+.inner-acc i.fa-code{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 240px;
+    z-index: 0;
+    opacity: 0.1;
+}
+.inner-acc i.fa-newspaper-o{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 240px;
+    z-index: 0;
+    opacity: 0.1;
+}
+.inner-acc i.fa-line-chart{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 240px;
+    z-index: 0;
+    opacity: 0.1;
+}
+
+
+.img-st{
+    position: relative;
+    padding: 0px 15px;
+}
+
+
+
+.message-box .pronunciation{
+    font-size: large;
+    font-weight: bolder;
+    padding: 5%;
+    padding-left: 10%;
+
+}
+.message-box .slangAudio{
+    padding: 3%;
+    padding-left: 10%;
+
+}
+
+.message-box .sentence{
+    padding: 3%;
+    padding-left: 10%;
+
+}
+.message-box .sentence .definition{
+    font-weight: 900;
+}
+
+.message-box .sentence .exampleAudio{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.message-box .sentence .example{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.vission-and-mission {
+    margin-top: 10px;
+}
+.nav-pills {
+    border: 1px solid #5d8dff;
+}
+.nav-pills > li {
+    width: 50%;
+    padding: 10px;
+    float: left;
+    margin: 0 !important;
+}
+
+.vission-and-mission .nav-pills > li > a.active {
+    border: none;
+    background: #5d8dff;
+    color: #ffffff;
+}
+
+.vission-and-mission .nav-pills > li > a {
+    padding: 12px 15px;
+    color: #5d8dff;
+}
+
+.process-accordion{
+    -webkit-box-shadow: 0px 2px 16px 0px rgba(204,204,204,1);
+    -moz-box-shadow: 0px 2px 16px 0px rgba(204,204,204,1);
+    box-shadow: 0px 2px 16px 0px rgba(204,204,204,1);
+}
+
+.process-accordion .card{
+    border: none;
+}
+.process-accordion .card-header{
+    padding: 0px;
+}
+.process-accordion .card-header h5{
+    padding: 0px;
+}
+.process-accordion .card-header h5 a{
+    padding: 15px 30px;
+    display: block;
+    font-size: 22px;
+    line-height: 26px;
+}
+.process-accordion .card-header h5 a i{
+    float: right;
+}
+
+.process-accordion .card.active .card-header{
+    background: #5d8dff;
+}
+.process-accordion .card.active .card-header h5 a{
+    color: #ffffff;
+}
+
+.process-accordion .card-header h5 a:hover{
+    background: #596ea6;
+    color: #ffffff;
+}
+.inner-acc {
+    position: relative;
+}
+
+.inner-acc p{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0px;
+    padding-bottom: 30px;
+}
+.inner-acc ul{
+    position: relative;
+    z-index: 2;
+}
+.inner-acc ul li{
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+    line-height: 36px;
+    padding: 0px 15px;
+    border-radius: 5px;
+}
+
+.inner-acc ul li:hover{
+    background: #596ea6;
+    color: #ffffff;
+}
+
+.inner-acc ul li i{
+    padding-right: 10px;
+}
+
+.inner-acc i.fa-search{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 240px;
+    z-index: 0;
+    opacity: 0.1;
+}
+.inner-acc i.fa-bullseye{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 240px;
+    z-index: 0;
+    opacity: 0.1;
+}
+.inner-acc i.fa-code{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 240px;
+    z-index: 0;
+    opacity: 0.1;
+}
+.inner-acc i.fa-newspaper-o{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 240px;
+    z-index: 0;
+    opacity: 0.1;
+}
+.inner-acc i.fa-line-chart{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 240px;
+    z-index: 0;
+    opacity: 0.1;
+}
+
+
+.img-st{
+    position: relative;
+    padding: 0px 15px;
+}
+
+
+
+.message-box .pronunciation{
+    font-size: large;
+    font-weight: bolder;
+    padding: 5%;
+    padding-left: 10%;
+
+}
+.message-box .slangAudio{
+    padding: 3%;
+    padding-left: 10%;
+
+}
+
+.message-box .sentence{
+    padding: 3%;
+    padding-left: 10%;
+
+}
+.message-box .sentence .definition{
+    font-weight: 900;
+}
+
+.message-box .sentence .exampleAudio{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.message-box .sentence .example{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+

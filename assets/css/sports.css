@@ -1,0 +1,225 @@
+
+
+select, #suburb{
+                     font-family: "Gothic A1", sans-serif;
+                     font-size: 17px;
+                     font-weight: 100;
+                     line-height: 1;
+                     margin: 0px 0px 10px 0px;
+                 }
+
+#ageList{
+    margin: 0px 0px 10px 0px;
+}
+
+
+
+
+.profile {
+    transition: opacity .5s ease-in;
+    position: absolute;
+    width: 70%;
+}
+
+h1 {
+    font-family: "Gothic A1", sans-serif;
+    color: #7ED386;
+    font-size: 1em;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+label{
+    color: #777777;
+    font-family: "Gothic A1", sans-serif;
+    width: 80%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0px 0px 10px 0px;
+    font-weight: 300;
+}
+
+select {
+    border-width: 1px;
+    border-style: solid;
+    border-top: 0;
+    width:80%;
+    font-size: 18px;
+    padding: 7px 0;
+    color: #070707;
+    text-align: center;
+    align-items: center;
+}
+
+
+img{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    width: 70%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+}
+
+#displayPreference{
+    font-family: "Gothic A1", sans-serif;
+    font-size: 18px;
+    position: relative;
+    margin-top: 10px;
+}
+
+#suburb{
+    width: 80%;
+}
+
+/* Style the buttons inside the tab */
+.tab button, #displayPreference {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: 300;
+    align-self: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.inner-content ul li{
+    display: inline-block;
+}
+
+#sports-title{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #15273e;
+    align-self: center;
+    text-align: center;
+}
+
+.container{
+    width: 400px;
+}
+
+#title{
+    font-family: "Gothic A1", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 20px;
+    align-self: center;
+    text-align: center;
+}
+
+.hint-text{
+    font-family: "Gothic A1", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+}
+
+#mapForm{
+    align-items: center;
+}
+
+.pic{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-left: 10%;
+    align-self: center;
+}
+
+p{
+    text-align: left;
+    margin-left: 10%;
+    padding-left: 20px;
+}
+
+.button{
+    align-self: center;
+    text-align: center;
+    font-family: "Gothic A1", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    align-items: center;
+}
+
+#goIcon{
+    max-height: 30px;
+    height: 100%;
+}
+
+#preferenceButton{
+    font-size: 20px;
+}
+
+#recommendation-msg{
+    font-size: 20px;
+}
+.activityResult{
+    height: 40px;
+}
+
+@media screen and (max-width: 700px) {
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    #sidebar a {float: left;}
+    div.content {margin-left: 0;}
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 414px) {
+    #title {
+        font-size: 30px;
+        align-self: center;
+        text-align: center;
+    }
+
+}
+
+.activityResult{
+    font-size: 20px;
+}
+
+#displayPreference,{
+    font-size: 25px;
+}
+
+.activityResult{
+    font-size: 30px;
+}

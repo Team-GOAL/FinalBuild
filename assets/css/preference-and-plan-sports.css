@@ -1,0 +1,131 @@
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: scale-down;
+    font-size: 20px;
+    color: black;
+}
+
+.planSports .container .inner-content ul li{
+    font-family: "Gothic A1", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+
+}
+
+
+.centered .one :hover{
+    background-size:110%;
+}
+
+.centered .one :after{
+    position:absolute;
+    top:100%;
+    bottom:0;
+    left:0;
+    right:0;
+    white-space:pre-wrap;
+    overflow:hidden;
+    background-color:whitesmoke;
+    color:#fff;
+    padding:0 8px;
+    opacity:0;
+    content:attr(data-text);
+    transition:0.5s;
+}
+
+.centered .one :hover:after{
+    opacity:1;
+    top:0;
+    padding:8px;
+}
+
+.centered .one:first-line{
+    color:#fff;
+    font-weight:bold;
+    font-size:1.5em;
+}
+
+
+.hvrbox,
+.hvrbox * {
+    box-sizing: border-box;
+}
+.hvrbox {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+.hvrbox img {
+    max-width: 100%;
+    width:50px;
+    height:50px;
+    object-fit: cover;
+}
+.hvrbox .hvrbox-layer_bottom {
+    display: block;
+}
+.hvrbox .hvrbox-layer_top {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+    opacity: 1;
+}
+
+.inner-content ul li{
+    display: inline-block;
+}
+
+.inner-content{
+    text-align: center;
+}
+
+
+#title{
+    font-family: "Gothic A1", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.work-area{
+    background-color: transparent;
+}
+
+
+.slick-slide img {
+    display: block;
+}
+
+#goIcon{
+    max-width: 100%;
+    width:30px;
+    height:30px;
+    object-fit: cover;
+}
+
+.img{
+    align-items: center;
+    align-self: center;
+}
