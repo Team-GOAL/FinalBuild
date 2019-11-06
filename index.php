@@ -66,7 +66,6 @@
 
 <div class="container">
 
-       <section id="what-we-do">
         <div class="col-lg-12" align="center"  style="font-family:Gothic A1, sans-serif;
         font-size: 40px;
         font-weight: bold;
@@ -90,7 +89,7 @@
 						<ul class="dropdown-menu dropdown-default btn-block">
 
 							<li>
-								<a href="sports.php">Sports</a>
+								<a href="sports.php">Find Sports</a>
 							</li>
 
 							<li class="divider"></li>
@@ -115,7 +114,7 @@
 
 						<ul class="dropdown-menu dropdown-default btn-block">
                                 <li>
-                                    <a href="english-tips.php">Daily Routines</a>
+                                    <a href="english-tips.php">English Tips</a>
                                 </li>
 
                                 <li class="divider"></li>
@@ -156,7 +155,6 @@
         </div>
 
 	</div>
-    </section>
 
 
 	</div>
@@ -185,7 +183,7 @@
 							<ul class="dropdown-menu dropdown-default">
 
 								<li>
-									<a href="sports.php">Sports</a>
+									<a href="sports.php"> Find Sports</a>
 								</li>
 
 								<li class="divider"></li>
@@ -228,7 +226,7 @@
 							<ul class="dropdown-menu dropdown-default">
 
 								<li>
-									<a href="english-tips.php">Daily Routines</a>
+									<a href="english-tips.php">English Tips</a>
 								</li>
 
 								<li class="divider"></li>

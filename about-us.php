@@ -47,8 +47,8 @@
         <div id = "title" align="center">MuziVic's Mission</div>
     </div>
 </div>
-		
-        <div class="about-area pt-120 pb-120">
+
+        <div class="about-area pt-60 pb-30">
             <div class="container">
                 <div class="row d-flex align-items-top">
                     <div class="col-lg-6 col-md-12">
@@ -70,7 +70,8 @@
                 </div>
             </div>
         </div>
-        <div class="about-area pt-60 pb-60">
+		<hr>
+        <div class="about-area pt-30 pb-30">
             <div class="container">
                 <div class="row d-flex align-items-center">
                     <div class="container">
@@ -91,8 +92,8 @@
                 </div>
             </div>
         </div>
-
-		 <div class="about-area pt-60 pb-60">
+<hr>
+		 <div class="about-area pt-60 pb-30">
             <div class="container">
                 <div class="row d-flex align-items-top">
                     <div class="col-lg-6 col-md-12">
@@ -107,7 +108,6 @@
                 </div>
             </div>
         </div>
-
 	<div class="about-area pt-10 pb-10">
 		<div class="container">
                         <div class="tools-content ml-20">
@@ -127,21 +127,21 @@
 		</div>
 	</div>
 	
-
-        <div class="about-area pt-60 pb-30">
+		<hr>
+        <div class="about-area pt-30 pb-30">
             <div class="container">
                 <div class="row d-flex align-items-top">
                     <div class="container">
                         <div class="tools-content ml-20">
                             <h2>Practicing English</h2>
-                            <p class="paragraph-blog">Helping your child learn english</p>
+                            <p class="paragraph-blog">Helping your child learn english is a great opportunity to boost their self-confidence.</p>
                             <p>Helping your child in practicing english is a great way to build confidence in your child to start using English as one of their  primary languages. We provide you with tips on how to integrate english daily and sharing our knowledge of aussie slang with you!</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>	
-
+<hr>
         <div class="about-area pt-30 pb-0">
             <div class="container">
                 <div class="row d-flex align-items-top">
@@ -155,7 +155,7 @@
                 </div>
             </div>
         </div>			
-		
+		<hr>
 		<div class="about-area pt-60 pb-0">
             <div class="container">
                 <div class="row d-flex align-items-top">

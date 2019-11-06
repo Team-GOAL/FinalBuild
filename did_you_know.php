@@ -18,14 +18,14 @@
     <link rel="stylesheet" href="assets/css/icons.css">
     <link rel="stylesheet" href="assets/css/plugins.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/English-tips.css">
     <link rel="stylesheet" href="assets/css/title.css">
     <link rel="stylesheet" href="assets/css/mdb.min.css">
 
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- Custom styles for this template -->
     <link href="assets/css/business-frontpage.css" rel="stylesheet">
-	
+
     <script type="text/javascript">
         //===============================================================
         function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){
@@ -33,6 +33,12 @@
             var targetObj = typeof oTargetObj == "string" ? document.getElementById(oTargetObj) : oTargetObj;
             var openTip = oOpenTip || "";
             var shutTip = oShutTip || "";
+            var allTargetObj=document.querySelectorAll(".card-body");
+            for (var i = 0; i < allTargetObj.length; i++) {
+                if(allTargetObj[i]!=targetObj){
+                    allTargetObj[i].style.display="none";
+                }
+            }
             if(targetObj.style.display!=="none"){
                 if(shutAble) return;
                 targetObj.style.display="none";
@@ -116,26 +122,30 @@
             </div>
             <div id="box1" class="card-body" style="display: none">
                 <h4 class="card-title">Community/Welfare</h4>
-                <p class="card-text"></p>
+                <div class="points-with1">
+                    <ul >
+                        <li>
+                            Bring your children with you to cook or serve meals at a homeless shelter.
+                        </li>
+                        <li>
+                            Donate books or art supplies to a homeless shelter for children.
+                        </li>
+                        <li>
+                            Have your child sort through old toys they don’t play with anymore and donate them to Goodwill or another local charity group
+                        </li>
+                        <li>
+                            Donate books or art supplies to a homeless shelter for children.
+                        </li>
+                        <li>
+                            Make care packages for the homeless. Include travel-sized toiletries, granola bars, and bottled water. Carry them with you in the car to hand out when you have the opportunity
+                        </li>
+                        <li>
+                            Organize to build a playground in your neighborhood.
+                        </li>
+                    </ul>
+                </div>
 
-                    <li>
-                        Bring your children with you to cook or serve meals at a homeless shelter.
-                    </li>
-                    <li>
-                        Donate books or art supplies to a homeless shelter for children.
-                    </li>
-                    <li>
-                        Have your child sort through old toys they don’t play with anymore and donate them to Goodwill or another local charity group
-                    </li>
-                    <li>
-                        Donate books or art supplies to a homeless shelter for children.
-                    </li>
-                    <li>
-                        Make care packages for the homeless. Include travel-sized toiletries, granola bars, and bottled water. Carry them with you in the car to hand out when you have the opportunity
-                    </li>
-                    <li>
-                        Organize to build a playground in your neighborhood.
-                    </li>
+
             </div>
         </div>
         <div class="col-md-6 mb-50 ">
@@ -149,19 +159,22 @@
             </div>
                 <div id="box2" class="card-body" style="display: none">
                     <h4 class="card-title">Environment</h4>
-                    <p class="card-text"> </p>
-                    <li>
-                        Complete a park clean up
-                    </li>
-                    <li>
-                        Clean up after serving food at a local community service
-                    </li>
-                    <li>
-                        Clean a town monument
-                    </li>
-                    <li>
-                        Plant flowers at a local school or library
-                    </li>
+                    <div class="points-with1">
+                        <ul>
+                            <li>
+                                Complete a park clean up
+                            </li>
+                            <li>
+                                Clean up after serving food at a local community service
+                            </li>
+                            <li>
+                                Clean a town monument
+                            </li>
+                            <li>
+                                Plant flowers at a local school or library
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
@@ -176,24 +189,26 @@
             </div>
                 <div class="card-body" id="box3" style="display: none">
                     <h4 class="card-title">Animal Welfare</h4>
-                    <p class="card-text"></p>
-                    <li>
-                        Volunteer at a local animal shelter.
-                    </li>
-                    <li>
-                        Donate newspaper , dog beds or other pet supplies to local shelters
-                    </li>
-                    <li>
-                        Offer a walk to neighbour's dog
-                    </li>
-                    <li>
-                        Place bird feeder in the yard for local birds
-                    </li>
-                    <li>
-                        Adopt a pet
-                    </li>
+                    <div class="points-with1">
+                        <ul>
+                            <li>
+                                Volunteer at a local animal shelter.
+                            </li>
+                            <li>
+                                Donate newspaper , dog beds or other pet supplies to local shelters
+                            </li>
+                            <li>
+                                Offer a walk to neighbour's dog
+                            </li>
+                            <li>
+                                Place bird feeder in the yard for local birds
+                            </li>
+                            <li>
+                                Adopt a pet
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
             </div>
         <div class="col-md-6 mb-50">
             <div class="card volunteer">
@@ -206,24 +221,24 @@
             </div>
                 <div class="card-body" id="box4" style="display: none">
                     <h4 class="card-title"> Health</h4>
-                    <p class="card-text"></p>
-                    <li>
-                        Walk with your kid to raise awareness among kids
-                    </li>
-                    <li>
-                        Get your child involved with groups that offer built-in volunteer
-                        opportunities, such as the Boy Scouts, Girl Scouts
-                    </li>
-                    <li>
-                        Volunteer with Red Cross Youth Services through your local
-                        Red Cross branch. And make sure kids and parents take a
-                        CPR/first-aid course so everyone is ready to volunteer lifesaving services
-                        if necessary.
-                    </li>
-                    <li>
-                        Volunteer to shelve books at a library
-                    </li>
-
+                    <div class="points-with1">
+                        <li>
+                            Walk with your kid to raise awareness among kids
+                        </li>
+                        <li>
+                            Get your child involved with groups that offer built-in volunteer
+                            opportunities, such as the Boy Scouts, Girl Scouts
+                        </li>
+                        <li>
+                            Volunteer with Red Cross Youth Services through your local
+                            Red Cross branch. And make sure kids and parents take a
+                            CPR/first-aid course so everyone is ready to volunteer lifesaving services
+                            if necessary.
+                        </li>
+                        <li>
+                            Volunteer to shelve books at a library
+                        </li>
+                    </div>
                 </div>
             </div>
         <div class="col-md-6 offset-3 mb-50">
@@ -237,24 +252,25 @@
             </div>
             <div class="card-body" id="box5" style="display: none">
                 <h4 class="card-title"> Others</h4>
-                <p class="card-text"></p>
-                <li>
-                    Help elderly people at old age centers
-                </li>
-                <li>
-                    Accompany elderly citizens to hospitals or markets
-                </li>
-                <li>
-                    Mow neighbour's lawn
-                </li>
+                <div class="points-with1">
+                    <ul>
+                        <li>
+                            Help elderly people at old age centers
+                        </li>
+                        <li>
+                            Accompany elderly citizens to hospitals or markets
+                        </li>
+                        <li>
+                            Mow neighbour's lawn
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-
     </div>
 
     <!-- /.row -->
-     <div class="tools-content ml-20" style="align-content: left">
+     <div class="tools-content ml-20" >
                 <h3> Let's find Volunteering Activities at GoVolunteer.com</h3>
 							<div class="slider-btn-4 mt-30 button" style="text-align: left">
 								<div class="btn-group open">

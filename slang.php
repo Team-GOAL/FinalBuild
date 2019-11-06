@@ -69,12 +69,12 @@
                     <li><a href="index.php">Home</a></li>
                     <li><i class="fa fa-angle-double-right" aria-hidden="true"></i></li>
                     <!--No link here-->
-                    <li>Talk like a local</li>
+                    <li>Aussie Slang</li>
                 </ul>
             </div>
         </div>
         <div style=" padding: 1%">
-                <div id = "title" align="center">Teach your kids Aussie slangs</div>
+                <div id = "title" align="center">Teach your kids Aussie slang</div>
         </div>
     </div>
 </div>

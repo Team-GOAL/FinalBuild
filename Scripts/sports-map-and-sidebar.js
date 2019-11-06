@@ -23,8 +23,6 @@ function searchBySuburbAndActivityFromServer(allData, urlStr) {
         success: function (locData) { // Pop the location data on map
        // if data is empty, show feedback to the user
             if (locData === "") {
-                //TODO display not found hint text
-                //TODO not working at the moment
                 $('#notFound').html("No result");
                 searchActivityAtSuburbNearby(allData, urlStr);
             }
@@ -33,25 +31,13 @@ function searchBySuburbAndActivityFromServer(allData, urlStr) {
             showFacilitiesOnMap(locData);
         },
         error: function (jqxhr, status, exception) {
-//alert(JSON.stringify(jqxhr));
-// alert(status);
-// alert(exception);
-//alert("No result found. Please refresh and search again.");
-            //TODO not working currntly
             $('#notFound').html("No result");
             searchActivityAtSuburbNearby(allData, urlStr);
             $('#displayLocations').empty();
-
-// TODO find suburbs nearby
-// TODO print we could not find any facility at this suburb.
-// TODO displayAlternativeForNotFound
-//   var sameActivityNearbyURL = "php/sports-not-found-prepared-statement.php";
-//    searchActivityAtSuburbNearby(allData, sameActivityNearbyURL);
         }
     });
 }
 
-//TODO not working atm
 
 /**
  * It takes in a sports activity, suburb name and the url of the php server file
@@ -68,7 +54,6 @@ function searchActivityAtSuburbNearby(allData, urlStr) {
         data: allData,
         success: function (locData) { // Pop the location data on map
             if (locData === "") { // if data is empty, show feedback to the user
-                //TODO change here
                 $('#notFound').html("We have not found any result.");
             }
 
@@ -76,22 +61,7 @@ function searchActivityAtSuburbNearby(allData, urlStr) {
             showFacilitiesOnMap(locData);
         },
         error: function (jqxhr, status, exception) {
-       //alert(JSON.stringify(jqxhr));
-      // alert(status);
-      // alert(exception);
-      //alert("No result found. Please refresh and search again.");
-            //TODO change here
             $('#notFound').html("We have not found any result.");
-// TODO if activity is a team sports? How do I know it? hard code it
-// TODO call the search team activity function
-
-// TODO if activity is an individual sports?
-// TODO call the search individual activity function
-// TODO if activity is a team sports? How do I know it? hard code it
-// TODO call the search team activity function
-
-// TODO if activity is an individual sports?
-// TODO call the search individual activity function
         }
     });
 }
@@ -118,8 +88,6 @@ function showFacilitiesOnMap(allData) {
         var activityName = data.sports; // record sports activity
         activityName = activityName.toLowerCase();
         activtyList.push(activityName);
-        //TODO fix here to load different icons
-
 
         var pt = {};
         pt.latitude = data.lat;
@@ -170,7 +138,6 @@ function showFacilitiesOnMap(allData) {
         var marker = new google.maps.Marker({
             position: latlng,
             map: map,
-//icon: icon;
         });
         arrMarkers[i] = marker;
         var infoWind = new google.maps.InfoWindow;

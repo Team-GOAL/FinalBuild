@@ -19,10 +19,9 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/English-tips.css">
     <link rel='stylesheet prefetch' href='assets/css/bootstrap.min1.css'>
-    <link rel="stylesheet" href="assets/css/indoor1.css">
     <link rel="stylesheet" href="assets/css/title.css">
 
-
+    <link rel="stylesheet" href="assets/css/indoor1.css">
 
     <script type="text/javascript">
         //===============================================================
@@ -62,6 +61,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
+
 </head>
 <?php include "header.html" ?>
 
@@ -80,8 +80,8 @@
             </ul>
         </div>
     </div>
-    <div style=" padding: 1%">
-        <div id = "title" align="center">Play with your kids</div>
+    <div align="center" style=" padding: 1%">
+        <div id = "title">Play with your kid</div>
     </div>
 </div>
 
@@ -102,16 +102,16 @@
                 <a href="#playHomeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Play at home</a>
                 <ul class="collapse list-unstyled" id="playHomeSubmenu">
                     <li>
-                        <a href="#at home along">1 person</a>
+                        <a href="#at home along">For 1 person</a>
                     </li>
                     <li>
-                        <a href="#at home together">More than 1</a>
+                        <a href="#at home together">For 2 people and more</a>
                     </li>
 
                 </ul>
             </li>
             <li>
-                <a href="#at reunion">Play at reunion</a>
+                <a href="#at Friends gathering">Play at Friends gathering</a>
 
             </li>
             <h4 style="padding-left: 8px">Estimated time</h4>
@@ -119,19 +119,19 @@
                 <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Estimated time per round</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
                     <li>
-                        <a href="#quick games">less than 10 min</a>
+                        <a href="#quick games">Less than 10 min</a>
                     </li>
                     <li>
                         <a href="#normal games">10~20 min</a>
                     </li>
                     <li>
-                        <a href="#long time games">more than 20 min</a>
+                        <a href="#long time games">More than 20 min</a>
                     </li>
                 </ul>
             </li>
-            <h4 style="padding-left: 8px">Material requirement</h4>
+            <h4 style="padding-left: 8px">Material Requirement</h4>
             <li>
-                <a href="#no requirement games">No requirement</a>
+                <a href="#no requirement games">No Requirement</a>
             </li>
 
         </ul>
@@ -155,11 +155,11 @@
         </div>
 
         <!--play along-->
-        <div id="at home along" align="center" class="row">
+        <div id="at home along" class="row">
             <div  class="col-lg-12 col-md-12 ">
                 <!--title of section -->
-                <h2>Play at home </h2>
-                <h4>Kids can play along (1 person)</h4>
+                <h2>Play at Home </h2>
+                <h4>Let Your Kid Play Alone!</h4>
                 <div class="line"></div>
                 <!--first row-->
 
@@ -181,7 +181,7 @@
                                             <div class="centered">
                                                 Hopscotch
                                             </div>
-                                            <a onclick="openShutManager(this,'box1.1.1')"><img src="assets/images/indoor%20picture/new/hopscotch.jpg" class="card-img-top" alt=""></a>
+                                            <a onclick="openShutManager(this,'box1.1.1')" href="#box1.1.1"><img src="assets/images/indoor%20picture/new/hopscotch.jpg" class="card-img-top" alt=""></a>
                                         </div>
                                     </div>
 
@@ -190,12 +190,12 @@
                                             <div class="centered">
                                                 Bouncy Marble
                                             </div>
-                                            <a onclick="openShutManager(this,'box1.1.3')"><img src="assets/images/indoor%20picture/new/marbles.jpg" class="card-img-top" alt=""></a>
+                                            <a onclick="openShutManager(this,'box1.1.3')" href="#box1.1.3"><img src="assets/images/indoor%20picture/new/marbles.jpg" class="card-img-top" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="item">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box1.2.1')">
+                                            <a onclick="openShutManager(this,'box1.2.1')" href="#box1.2.1">
                                                 <div class="centered">
                                                     Origami
                                                 </div>
@@ -205,7 +205,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box1.2.2')">
+                                            <a onclick="openShutManager(this,'box1.2.2')" href="#box1.2.2">
                                                 <div class="centered">
                                                     Ringtoss
                                                 </div>
@@ -215,7 +215,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box1.2.3')">
+                                            <a onclick="openShutManager(this,'box1.2.3')" href="#box1.2.3">
                                                 <div class="centered">
                                                     Family Bowling
                                                 </div>
@@ -231,7 +231,7 @@
                     </div>
                     <div class="col-lg-12 col-md-12">
                         <div id="box1.1.1" class="card-body" style="display: none; float: left">
-                            <h4 class="card-title activity-description" align="center">Hopscotch</h4>
+                            <h4 class="card-title activity-description">Hopscotch</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -264,7 +264,7 @@
                                 <p>
                                     Bandage (on the carpet) or chalks (in the yard)
                                 </p>
-                                <p class="attributes_title"> Estimated time: </p>
+                                <p class="attributes_title"> Estimated Time: </p>
                                 <p>
                                     10 minutes per round
                                 </p>
@@ -278,7 +278,7 @@
 
 
                         <div id="box1.1.3" class="card-body" style="display: none; float: left;">
-                            <h4 class="card-title activity-description" align="center">Bouncy Marble</h4>
+                            <h4 class="card-title activity-description">Bouncy Marble</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -318,7 +318,7 @@
                             </div>
                         </div>
                         <div id="box1.2.1" class="card-body" style="display: none; float: left">
-                            <h4 class="card-title activity-description" align="center">Origimi</h4>
+                            <h4 class="card-title activity-description">Origimi</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -359,7 +359,7 @@
                         </div>
 
                         <div id="box1.2.2" class="card-body" style="display: none; float: left">
-                            <h4 class="card-title activity-description" align="center">Ring toss</h4>
+                            <h4 class="card-title activity-description">Ring toss</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -394,7 +394,7 @@
                             </div>
                         </div>
                         <div id="box1.2.3" class="card-body" style="display: none; float: left;">
-                            <h4 class="card-title activity-description" align="center">Family Bowling</h4>
+                            <h4 class="card-title activity-description">Family Bowling</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -441,11 +441,11 @@
         </div>
 
         <!--play with child-->
-        <div id="at home together" align="center" class="row" style="margin-top: 3%">
+        <div id="at home together" class="row" style="margin-top: 3%">
             <div  class="col-lg-12 col-md-12">
                 <!--title of section -->
                 <div class="line"></div>
-                <h4>Play with kids (available for more than 1 person)</h4>
+                <h4>Play with your kid at home!</h4>
                 <div class="line"></div>
                 <!--first row-->
                 <div class="container">
@@ -463,7 +463,7 @@
                                     <div class="item active">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
 
-                                            <a onclick="openShutManager(this,'box2.1.1')">
+                                            <a onclick="openShutManager(this,'box2.1.1')" href="#box2.1.1">
                                                 <div class="centered">
                                                     Draw Something
                                                 </div>
@@ -473,7 +473,7 @@
                                     </div>
                                     <div class="item ">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box2.1.2')">
+                                            <a onclick="openShutManager(this,'box2.1.2')" href="#box2.1.2">
                                                 <div class="centered">
                                                     Clapping game
                                                 </div>
@@ -483,7 +483,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box2.1.3')">
+                                            <a onclick="openShutManager(this,'box2.1.3')" href="#box2.1.3">
                                                 <div class="centered">
                                                     Balloon Stormping
                                                 </div>
@@ -493,7 +493,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box2.2.1')">
+                                            <a onclick="openShutManager(this,'box2.2.1')" href="#box2.2.1">
                                                 <div class="centered">
                                                     Crossing Obstacles
                                                 </div>
@@ -504,7 +504,7 @@
 
                                     <div class="item">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box2.2.3')">
+                                            <a onclick="openShutManager(this,'box2.2.3')" href="#box2.2.3">
                                                 <div class="centered">
                                                     Gobang & Gomoku
                                                 </div>
@@ -520,7 +520,7 @@
                     </div>
                     <div class="col-lg-12 col-md-12">
                         <div id="box2.1.1" class="card-body" style="display: none; float: left">
-                            <h4 class="card-title activity-description" align="center">Draw Something</h4>
+                            <h4 class="card-title activity-description">Draw Something</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -563,7 +563,7 @@
                         </div>
 
                         <div id="box2.1.2" class="card-body" style="display: none; float: left">
-                            <h4 class="card-title activity-description" align="center">Clapping Game</h4>
+                            <h4 class="card-title activity-description">Clapping Game</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -600,7 +600,7 @@
                             </div>
                         </div>
                         <div id="box2.1.3" class="card-body" style="display: none; float: left;">
-                            <h4 class="card-title activity-description" align="center">Balloon Stormping</h4>
+                            <h4 class="card-title activity-description">Balloon Stormping</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -638,7 +638,7 @@
                             </div>
                         </div>
                         <div id="box2.2.1" class="card-body" style="display: none; float: left">
-                            <h4 class="card-title activity-description" align="center">Crossing Obstacles</h4>
+                            <h4 class="card-title activity-description">Crossing Obstacles</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -674,7 +674,7 @@
                         </div>
 
                         <div id="box2.2.3" class="card-body" style="display: none; float: left;">
-                            <h4 class="card-title activity-description" align="center">Gobang & Gomoku</h4>
+                            <h4 class="card-title activity-description">Gobang & Gomoku</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -715,13 +715,13 @@
 
         </div>
 
-        <!--play at reunion-->
-        <div id="at reunion" align="center" class="row">
+        <!--play at F-->
+        <div id="at Friends gathering" class="row">
             <div  class="col-lg-12 col-md-12">
                 <!--title of section -->
                 <div class="line"></div>
-                <h2>Play at reunion </h2>
-                <h4>Kids can play with friends</h4>
+                <h2>Play at Friends' Gatherings </h2>
+                <h4>Let Your Kid Play with Other Kids!</h4>
                 <div class="line"></div>
                 <!--first row-->
                 <div class="container">
@@ -738,7 +738,7 @@
                                     </ol>
                                     <div class="item active">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box3.1.2')">
+                                            <a onclick="openShutManager(this,'box3.1.2')" href="#box3.1.2">
                                                 <div class="centered">
                                                     Draw Something
                                                 </div>
@@ -748,7 +748,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box3.1.3')">
+                                            <a onclick="openShutManager(this,'box3.1.3')" href="#box3.1.3">
                                                 <div class="centered">
                                                     Balloon Stormping
                                                 </div>
@@ -758,7 +758,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box3.2.1')">
+                                            <a onclick="openShutManager(this,'box3.2.1')" href="#box3.2.1">
                                                 <div class="centered">
                                                     Hopscotch
                                                 </div>
@@ -768,7 +768,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box3.2.2')">
+                                            <a onclick="openShutManager(this,'box3.2.2')" href="#box3.2.2">
                                                 <div class="centered">
                                                     Ringtoss
                                                 </div>
@@ -778,7 +778,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box3.2.3')">
+                                            <a onclick="openShutManager(this,'box3.2.3')" href="#box3.2.3">
                                                 <div class="centered">
                                                     What we have!
                                                 </div>
@@ -794,7 +794,7 @@
                     </div>
                     <div class="col-lg-12 col-md-12">
                         <div id="box3.1.2" class="card-body" style="display: none; float: left">
-                            <h4 class="card-title activity-description" align="center">Draw Something</h4>
+                            <h4 class="card-title activity-description">Draw Something</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -833,7 +833,7 @@
                             </div>
                         </div>
                         <div id="box3.1.3" class="card-body" style="display: none; float: left;">
-                            <h4 class="card-title activity-description" align="center">Balloon Stormping</h4>
+                            <h4 class="card-title activity-description">Balloon Stormping</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -871,7 +871,7 @@
                             </div>
                         </div>
                         <div id="box3.2.1" class="card-body" style="display: none; float: left">
-                            <h4 class="card-title activity-description" align="center">Hopscotch</h4>
+                            <h4 class="card-title activity-description">Hopscotch</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -916,7 +916,7 @@
                         </div>
 
                         <div id="box3.2.2" class="card-body" style="display: none; float: left">
-                            <h4 class="card-title activity-description" align="center">Ring toss</h4>
+                            <h4 class="card-title activity-description">Ring toss</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -950,7 +950,7 @@
                             </div>
                         </div>
                         <div id="box3.2.3" class="card-body" style="display: none; float: left;">
-                            <h4 class="card-title activity-description" align="center">What we have! </h4>
+                            <h4 class="card-title activity-description">What we have! </h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -999,12 +999,12 @@
         </div>
 
         <!--quick games-->
-        <div id="quick games" align="center" class="row">
+        <div id="quick games" class="row">
             <div  class="col-lg-12 col-md-12 ">
                 <!--title of section -->
                 <div class="line"></div>
                 <h2>Estimated time </h2>
-                <h4>no more than or around 10 minutes</h4>
+                <h4>Under 10 minutes</h4>
                 <div class="line"></div>
                 <!--first row-->
 
@@ -1024,12 +1024,12 @@
                                             <div class="centered">
                                                 Bouncy Marble
                                             </div>
-                                            <a onclick="openShutManager(this,'box4.1.1')"><img src="assets/images/indoor%20picture/new/marbles.jpg" class="card-img-top" alt=""></a>
+                                            <a onclick="openShutManager(this,'box4.1.1')" href="#box4.1.1"><img src="assets/images/indoor%20picture/new/marbles.jpg" class="card-img-top" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="item ">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box4.1.2')">
+                                            <a onclick="openShutManager(this,'box4.1.2')" href="#box4.1.2">
                                                 <div class="centered">
                                                     Clapping game
                                                 </div>
@@ -1039,7 +1039,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box4.2.1')">
+                                            <a onclick="openShutManager(this,'box4.2.1')" href="#box4.2.1">
                                                 <div class="centered">
                                                     What we have!
                                                 </div>
@@ -1057,7 +1057,7 @@
                     </div>
                     <div class="col-lg-12 col-md-12">
                         <div id="box4.1.1" class="card-body" style="display: none; float: left;">
-                            <h4 class="card-title activity-description" align="center">Bouncy Marble</h4>
+                            <h4 class="card-title activity-description">Bouncy Marble</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -1098,7 +1098,7 @@
                             </div>
                         </div>
                         <div id="box4.1.2" class="card-body" style="display: none; float: left">
-                            <h4 class="card-title activity-description" align="center">Clapping Game</h4>
+                            <h4 class="card-title activity-description">Clapping Game</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -1135,7 +1135,7 @@
                             </div>
                         </div>
                         <div id="box4.2.1" class="card-body" style="display: none; float: left;">
-                            <h4 class="card-title activity-description" align="center">What we have! </h4>
+                            <h4 class="card-title activity-description">What we have! </h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -1186,7 +1186,7 @@
         </div>
 
         <!--normal games-->
-        <div id="normal games" align="center" class="row">
+        <div id="normal games" class="row">
             <div  class="col-lg-12 col-md-12 ">
                 <!--title of section -->
                 <div class="line"></div>
@@ -1214,12 +1214,12 @@
                                             <div class="centered">
                                                 Hide & Seek
                                             </div>
-                                            <a onclick="openShutManager(this,'box5.1.1')"><img src="assets/images/indoor%20picture/new/hide.jpg" class="card-img-top" alt=""></a>
+                                            <a onclick="openShutManager(this,'box5.1.1')" href="#box5.1.1"><img src="assets/images/indoor%20picture/new/hide.jpg" class="card-img-top" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="item ">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box5.1.2')">
+                                            <a onclick="openShutManager(this,'box5.1.2')" href="#box5.1.2">
                                                 <div class="centered">
                                                     Hopscotch
                                                 </div>
@@ -1229,7 +1229,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box5.1.3')">
+                                            <a onclick="openShutManager(this,'box5.1.3')" href="#box5.1.3">
                                                 <div class="centered">
                                                     Draw Something
                                                 </div>
@@ -1239,7 +1239,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box5.2.1')">
+                                            <a onclick="openShutManager(this,'box5.2.1')" href="#box5.2.1">
                                                 <div class="centered">
                                                     Ring toss
                                                 </div>
@@ -1252,12 +1252,12 @@
                                             <div class="centered">
                                                 Balloon Stormping
                                             </div>
-                                            <a onclick="openShutManager(this,'box5.2.2')"><img src="assets/images/indoor%20picture/new/trample%20balloons.jpg" class="card-img-top" alt=""></a>
+                                            <a onclick="openShutManager(this,'box5.2.2')" href="#box5.2.2"><img src="assets/images/indoor%20picture/new/trample%20balloons.jpg" class="card-img-top" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="item">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box5.2.3')">
+                                            <a onclick="openShutManager(this,'box5.2.3')" href="#box5.2.3">
                                                 <div class="centered">
                                                     Family bowling
                                                 </div>
@@ -1273,7 +1273,7 @@
                     </div>
                     <div class="col-lg-12 col-md-12">
                         <div id="box5.1.1" class="card-body" style="display: none; float: left">
-                            <h4 class="card-title activity-description" align="center">Hide & Seek</h4>
+                            <h4 class="card-title activity-description">Hide & Seek</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -1316,7 +1316,7 @@
                             </div>
                         </div>
                         <div id="box5.1.2" class="card-body" style="display: none; float: left">
-                            <h4 class="card-title activity-description" align="center">Hopscotch</h4>
+                            <h4 class="card-title activity-description">Hopscotch</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -1360,7 +1360,7 @@
                             </div>
                         </div>
                         <div id="box5.1.3" class="card-body" style="display: none; float: left">
-                            <h4 class="card-title activity-description" align="center">Draw Something</h4>
+                            <h4 class="card-title activity-description">Draw Something</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -1402,7 +1402,7 @@
                             </div>
                         </div>
                         <div id="box5.2.1" class="card-body" style="display: none; float: left">
-                            <h4 class="card-title activity-description" align="center">Ring toss</h4>
+                            <h4 class="card-title activity-description">Ring toss</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -1436,7 +1436,7 @@
                             </div>
                         </div>
                         <div id="box5.2.2" class="card-body" style="display: none; float: left;">
-                            <h4 class="card-title activity-description" align="center">Balloon Stomping</h4>
+                            <h4 class="card-title activity-description">Balloon Stomping</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -1473,7 +1473,7 @@
                             </div>
                         </div>
                         <div id="box5.2.3" class="card-body" style="display: none; float: left;">
-                            <h4 class="card-title activity-description" align="center">Family Bowling</h4>
+                            <h4 class="card-title activity-description">Family Bowling</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -1520,11 +1520,11 @@
 
         </div>
         <!--long time games-->
-        <div id="long time games" align="center" class="row">
+        <div id="long time games" class="row">
             <div  class="col-lg-12 col-md-12 ">
                 <!--title of section -->
                 <div class="line"></div>
-                <h4>more than 30 minutes</h4>
+                <h4>Over 30 minutes</h4>
                 <div class="line"></div>
                 <!--first row-->
 
@@ -1544,12 +1544,12 @@
                                             <div class="centered">
                                                 Gobang & Gomoku
                                             </div>
-                                            <a onclick="openShutManager(this,'box6.1.1')"><img src="assets/images/indoor%20picture/new/gobang.jpg" class="card-img-top" alt=""></a>
+                                            <a onclick="openShutManager(this,'box6.1.1')" href="#box6.1.1"><img src="assets/images/indoor%20picture/new/gobang.jpg" class="card-img-top" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="item ">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box6.1.2')">
+                                            <a onclick="openShutManager(this,'box6.1.2')" href="#box6.1.2">
                                                 <div class="centered">
                                                     Crossing Obstacles
                                                 </div>
@@ -1559,7 +1559,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box6.1.3')">
+                                            <a onclick="openShutManager(this,'box6.1.3')" href="#box6.1.3">
                                                 <div class="centered">
                                                     Origami
                                                 </div>
@@ -1575,7 +1575,7 @@
                     </div>
                     <div class="col-lg-12 col-md-12">
                         <div id="box6.1.1" class="card-body" style="display: none; float: left;">
-                            <h4 class="card-title activity-description" align="center">Gobang & Gomoku</h4>
+                            <h4 class="card-title activity-description">Gobang & Gomoku</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -1611,7 +1611,7 @@
                             </div>
                         </div>
                         <div id="box6.1.2" class="card-body" style="display: none; float: left">
-                            <h4 class="card-title activity-description" align="center">Crossing Obstacles</h4>
+                            <h4 class="card-title activity-description">Crossing Obstacles</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -1646,7 +1646,7 @@
                             </div>
                         </div>
                         <div id="box6.1.3" class="card-body" style="display: none; float: left">
-                            <h4 class="card-title activity-description" align="center">Origimi</h4>
+                            <h4 class="card-title activity-description">Origimi</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -1696,11 +1696,11 @@
         </div>
 
         <!--no require games-->
-        <div id="no requirement games" align="center" class="row">
+        <div id="no requirement games" class="row">
             <div  class="col-lg-12 col-md-12 ">
                 <!--title of section -->
                 <div class="line"></div>
-                <h2>Requirements of material </h2>
+                <h2>Required Material </h2>
                 <h4>No requirement</h4>
                 <div class="line"></div>
                 <!--first row-->
@@ -1721,12 +1721,12 @@
                                             <div class="centered">
                                                 Clapping Game
                                             </div>
-                                            <a onclick="openShutManager(this,'box7.1.1')"><img src="assets/images/indoor%20picture/new/clapping%20game.jpg" class="card-img-top" alt=""></a>
+                                            <a onclick="openShutManager(this,'box7.1.1')" href="#box7.1.1"><img src="assets/images/indoor%20picture/new/clapping%20game.jpg" class="card-img-top" alt=""></a>
                                         </div>
                                     </div>
                                     <div class="item ">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box7.1.2')">
+                                            <a onclick="openShutManager(this,'box7.1.2')" href="#box7.1.2">
                                                 <div class="centered">
                                                     Hide & Seek
                                                 </div>
@@ -1737,7 +1737,7 @@
 
                                     <div class="item">
                                         <div class="col-lg-4 col-md-4 col-sm-12 volunteer card">
-                                            <a onclick="openShutManager(this,'box7.2.1')">
+                                            <a onclick="openShutManager(this,'box7.2.1')" href="#box7.2.1">
                                                 <div class="centered">
                                                     What we have!
                                                 </div>
@@ -1753,7 +1753,7 @@
                     </div>
                     <div class="col-lg-12 col-md-12">
                         <div id="box7.1.1" class="card-body" style="display: none; float: left">
-                            <h4 class="card-title activity-description" align="center">Clapping Game</h4>
+                            <h4 class="card-title activity-description">Clapping Game</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -1790,7 +1790,7 @@
                             </div>
                         </div>
                         <div id="box7.1.2" class="card-body" style="display: none; float: left">
-                            <h4 class="card-title activity-description" align="center">Hide & Seek</h4>
+                            <h4 class="card-title activity-description">Hide & Seek</h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -1830,7 +1830,7 @@
                             </div>
                         </div>
                         <div id="box7.2.1" class="card-body" style="display: none; float: left;">
-                            <h4 class="card-title activity-description" align="center">What we have! </h4>
+                            <h4 class="card-title activity-description">What we have! </h4>
                             <div class="col-lg-4 col-md-4 col-sm-12 " style="float: left">
                                 <p class="attributes_title"> Instruction</p>
                                 <p>
@@ -1902,17 +1902,9 @@
 </script>
 
     <?php include "footer.html" ?>
-
 <script src='Scripts/jquery.min1.js'></script>
 <script src='Scripts/bootstrap.min1.js'></script>
 <script  src="Scripts/index.js"></script>
-        <script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
-        <script src="assets/js/popper.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/ajax-mail.js"></script>
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/js/main.js"></script>
-
     </body>
 </html>
 

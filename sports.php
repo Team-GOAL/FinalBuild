@@ -101,13 +101,14 @@
 <body>
 
 <div class="modal fade" id="sportsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-    aria-hidden="true">
+     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <!--Content-->
         <div class="modal-content form-elegant">
             <!--Header-->
             <div class="modal-header text-center">
-                <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>View Recommended Sports<br> For Your Kid</strong></h3>
+                <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>View
+                        Recommended Sports<br> For Your Kid</strong></h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -115,7 +116,7 @@
             <!--preference-panel-->
             <div class="modal-body mx-4" id="preference-modal">
                 <!--Body-->
-                <form id="preferenceForm" name="preferenceForm" action="php/testPreference.php">
+                <form id="preferenceForm" name="preferenceForm" action="php/preference-prepared-statements.php">
                     <label style="text-align: center" for="age">Select your kid's age</label>
                     <select class="custom-select md-form pb-3 form-group" name="age" id="age"
                             style="max-width:420px; width:100%; height: 42px; font-size:17px; text-align: center">
@@ -150,7 +151,7 @@
             </div>
             <!--Footer -->
             <!--tips-panel-->
-            <div class="modal-body mx-4" id ="tips-modal">
+            <div class="modal-body mx-4" id="tips-modal">
                 <!--Body-->
                 <p>Test</p>
             </div>
@@ -181,14 +182,22 @@
 </div>
 <div class="col-sm-4"></div>
 <div id="displayAlternativeForNotFound" style="display: none"></div>
-<div><p id="recommendation-msg">Don't know which one to choose? See our recommendations for your kids!
-
-        <a data-target="#sportsModal" role="button" data-toggle="modal"
-           id="openPreference"> <img src="assets/Sports-Icons/go.png" id="goIcon" alt="" class="pic"></a></p>
+<div class="row">
+    <p class="col-sm-6" id="recommendation-msg">Don't know which one to choose? See our recommendations for your
+        kid!</p>
+    <div class="slider-btn-4 mt-30 button" style="margin-top: 0; font-size: 20px; max-height: 40px; height: 100%">
+        <div class="btn-group open">
+            <button data-target="#sportsModal" data-toggle="modal" id="openPreference" class="btn btn-lg btn-hover"
+                    aria-expanded="true">
+                See Our Recommendation
+            </button>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
 </div>
 <div><p id="displayPreference"></div>
 <div><p id="notFound" style="color: red; font-size: 20px"></div>
-<div class="row offset-sm-1" >
+<div class="row offset-sm-1">
     <div class="content col-lg-3" id="sidebar-whole">
         <div class="card" id="sidebar">
             <div class="row">
@@ -209,7 +218,8 @@
     <div class="content col-lg-9">
         <div id="search-control" class="map-control">
             <form id="mapFormControl" name="mapForm" action="" method="post" style="width: 320px">
-                <input type="text" name="suburb" id="suburb" style="width: 320px" placeholder="Enter the Suburb Name or Postcode"/>
+                <input type="text" name="suburb" id="suburb" style="width: 320px"
+                       placeholder="Enter the Suburb Name or Postcode"/>
                 <div id="suburb-err-msg" style="color: red"></div>
                 <row>
                     <select class="custom-select" name="sports" id="pac-list" style="width: 280px">
@@ -249,6 +259,9 @@
     var arrMarkers = [];
     var arrInfoWindows = [];
 
+    /**
+     * It instantializes the google map and the search box.
+     */
     function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
             center: {lat: -37.818078, lng: 144.96681}, // Moorabbin
@@ -258,25 +271,52 @@
         });
         var searchControl = document.getElementById('search-control');
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(searchControl);
-        //initiateSideBarList(createActivityList()); // instantialize a side bar with a list of activities
     }
 
-    $('body').on('click', '#map-button-control', function (e) {
-        e.preventDefault();
-     //   var valid = validateInput();
-    //    if (valid === true){
+    /**
+     * It validates whether the user input is empty
+     * and then call the searchBySuburbAndActivityFromServer function to search locations and display on map
+     */
+    function search() {
+        if ($('#suburb').val() === "" && $('#pac-list').val() === "") {
+            $('#notFound').html("Please enter a suburb or sports activity");
+        } else {
             let url = "php/sports-prepared-statements.php";
             searchBySuburbAndActivityFromServer($('#mapFormControl').serialize(), url);
-    //    }
-        $('notFound').innerHTML = "";
+            //    }
+            $('notFound').innerHTML = "";
+        }
+    }
+
+    /**
+     * When the search icon in the map is clicked, call search() function
+     */
+    $('body').on('click', '#map-button-control', function (e) {
+        e.preventDefault();
+        search();
     });
+
+    /**
+     * When the user presses the enter key, call search() function
+     */
+    $('body').on('keydown', '#map', function (e) {
+        var key = e.key.toLowerCase();
+        if (key === "enter") {
+            search();
+            e.preventDefault();
+        }
+    });
+
+    /**
+     * When the user clicks the button to view recommendations, search for sports acivites and display them.
+     */
     $('body').on('click', '#preferenceButton', function (e) {
         e.preventDefault();
 
         $('tips-modal').hide();
         $('preference-modal').show();
         $.ajax({
-            url: "php/testPreference.php",
+            url: "php/preference-prepared-statements.php",
             type: "POST",
             data: $('#preferenceForm').serialize(),
             dataType: "json",
@@ -285,14 +325,15 @@
                 // Display activities to the user.
                 var output = "<br>" + "<i class=\"fas fa-star\"></i>Recommended activties for your kid<i class=\"fas fa-star\"></i>" + "<br><br>";
                 for (var i in data) {
-                    output += "<a class ='activityResult button' id= '" + data[i].sportsActivity + "'>" + data[i].sportsActivity + "</a>       ";
+                    output += "<a class ='activityResult button' id= '" + data[i].sportsActivity + "'>" + data[i].sportsActivity + ", </a>";
+
                 }
                 output += "</tbody></table>";
                 $('#sportsModal').modal('hide');
                 $('#displayPreference').append(output);
                 // Show the first activity on map
                 let url = "php/sports-prepared-statements.php";
-                searchBySuburbAndActivityFromServer(data[0],url);
+                searchBySuburbAndActivityFromServer(data[0], url);
             },
             error: function (jqxhr, status, exception) {
                 // alert(JSON.stringify(jqxhr));
@@ -304,6 +345,9 @@
         });
     });
 
+    /**
+     * When the user clicks the
+     */
     $('body').on('click', '#openPreference', function (e) {
         $('#myModalLabel').show();
         $('#preference-modal').show();

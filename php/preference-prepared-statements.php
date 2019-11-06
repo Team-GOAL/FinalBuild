@@ -2,11 +2,12 @@
 
 require 'db-setup.php';
 
-//succeeded
 
 header('Content-type: application/json');
 
-//TODO check how to receive Ajax call from the client
+/**
+ * Instantiate the variables
+ */
 global $sql;
 global $display;
 
@@ -18,15 +19,17 @@ global $individual;
 global $indoor;
 global $outdoor;
 
-//instantialize the value
+
+$_POST["gender"] = "female";
+$_POST["teamIndividual"] = "team";
+$_POST["indoorOutdoor"] = "indoor";
+$_POST["age"] = 7;
+
 $team = $individual = $indoor = $team = 0;
 
-//Testing data:
-//$_POST["gender"] = "female";
-//$_POST["teamIndividual"] = "team";
-//$_POST["indoorOutdoor"] = "indoor";
-//$_POST["age"] = 7;
-
+/**
+ * Assign the posted values to variables
+ */
 $gender = $_POST["gender"];
 $age = $_POST["age"];
     if ($_POST["teamIndividual"] === "team") {
@@ -35,7 +38,9 @@ $age = $_POST["age"];
         $individual = 1;
     }
 
-
+/**
+ * Do sql  query based on the
+ */
 if ($individual === 1) {
     $sql = "select * from preference where Min_Age <= '$age' and Max_Age >= '$age' and Gender = '$gender' and Individual_Sport = 1";
 } elseif ($team === 1) {

@@ -171,18 +171,17 @@
 
 .points-with ul{
     list-style-type:disc;
-    margin: -3%;
-    padding: 2%;
-    padding-right: 5%;
     float: left;
 
 }
 
 .point-left{
     float: left;
+    margin-left: -5%;
 }
 .points-right{
     float: left;
+    margin-left: 5%;
 }
 .points-right h4{
     font-size: 27px;
@@ -193,7 +192,8 @@
 }
 
 .point-left h4{
-    font-family: "Gothic A1", sans-serif
+    font-family: "Gothic A1", sans-serif;
+    font-size: 27px;
 }
 
 .point-left ul li{
@@ -213,11 +213,12 @@
     line-height: 1.7em;
 }
 
-.points-with ul li{
+.points-with1 ul li{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: 1.7em;
+
 }
 
 

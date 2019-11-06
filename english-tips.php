@@ -67,7 +67,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><i class="fa fa-angle-double-right" aria-hidden="true"></i></li>
                 <!--No link here-->
-                <li>Speak Fluent English</li>
+                <li>English Tips</li>
             </ul>
         </div>
     </div>
@@ -108,6 +108,9 @@
                 <h2 class="card-title">Ordering Food</h2>
                 <div class="points-with">
                     <div class="point-left col-sm-12 col-md-6 col-lg-6">
+                        <h4>
+                            Benefits
+                        </h4>
                         <ul >
                             <li>Lead by example, show to your child how to order.</li>
                             <li>In the next opportunity, let your child order a particular dish by himself.</li>
@@ -122,9 +125,6 @@
                             <li>Could I have a glass of water, please?</li>
                             <li><a href="https://www.thoughtco.com/beginner-dialogues-at-a-restaurant-1210039">Find more dialogue examples and Key phrase here</a></li>
                         </ul>
-
-
-
                     </div>
                 </div>
             </div>
@@ -133,6 +133,9 @@
 
                 <div class="points-with">
                     <div class="point-left col-sm-12 col-md-6 col-lg-6">
+                        <h4>
+                            Benefits
+                        </h4>
                         <ul >
                             <li>If your children is still a beginner, tell them to identify common objects in english.</li>
                             <li>As your child gains proficiency, let them to talk about their day (school,friends etc).</li>
@@ -258,7 +261,7 @@
             <div class="card-body" id="box6" style="display: none">
                 <h2 class="card-title">Let Them Speak Uninterruptedly</h2>
 
-                <div class="points-with">
+                <div class="points-with1">
                     <ul >
                         <li>When the child makes a mistakes, let them continue until the child finishes.</li>
                         <li>At the end say: "Good work! remember your grammar lessons and then you will be perfect!".</li>
@@ -293,7 +296,7 @@
             <div class="card-body" id="box7" style="display: none">
                 <h2 class="card-title">Give Positive Response</h2>
 
-                <div class="points-with">
+                <div class="points-with1">
                     <ul >
                         <li>Smile and nod when the child is practicing.</li>
                     </ul>
@@ -302,7 +305,7 @@
             <div class="card-body" id="box8" style="display: none">
                 <h2 class="card-title">Clarity is More Important Than Accent</h2>
 
-                <div class="points-with">
+                <div class="points-with1">
                     <ul >
                         <li>The accent, whether Australian, American or British, matters little. It's more important to speak clearly.</li>
                     </ul>
@@ -334,7 +337,7 @@
             <div class="card-body" id="box9" style="display: none">
                 <h2 class="card-title">Let Them learn in Their Own Pace</h2>
 
-                <div class="points-with">
+                <div class="points-with1">
                     <ul >
                         <li>It is good to let them know the importance of speaking English in Melbourne, but do not overburden them with tasks.</li>
                         <li>Give them time to absorb what they learned, it will help them to be assured of their skills and have the confidence to speak.</li>
@@ -346,7 +349,7 @@
             <div class="card-body" id="box10" style="display: none">
                 <h2 class="card-title">Practice Consistently</h2>
 
-                <div class="points-with">
+                <div class="points-with1">
                     <ul >
                         <li>Speaking fluent English will take more than just several days.</li>
                         <li>Keep practicing English with your kids.</li>

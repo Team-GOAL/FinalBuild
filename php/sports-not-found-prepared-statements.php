@@ -2,8 +2,9 @@
 require 'db-setup.php'; // construct the database
 header('Content-type: application/json');
 
-//Succeeded in browser.
-
+/**
+ * Instantiate the variables
+ */
 global $suburb;
 global $sports;
 global $sql;
@@ -17,12 +18,9 @@ $postcode = 0;
 $_POST["suburb"] = "CLAYTON";
 $_POST["sports"] = "Soccer";
 
-/*
- * Test data:
- * $_POST["suburb"] = "CLAYTON";
- * $_POST["sports"] = "Soccer";
+/**
+ * Assign the posted values to variables
  */
-
 if (isset($_POST["suburb"]) && !empty($_POST["suburb"])) {
     $suburb = strtoupper($_POST["suburb"]);
 }
@@ -30,10 +28,10 @@ if (isset($_POST["sports"]) && !empty($_POST["sports"])) {
     $sports = $_POST["sports"];
 }
 
-// find the postcode of the suburb
-
-// Can not find the postcode here!!!
-
+/**
+ * Use prepared statements.
+ * If both inputs are filled, search by suburb and activity.
+ */
 $stmt = $conn->prepare("select * from sports where sports.SuburbTown like ?");
 $stmt->bind_param("s", $suburb);
 $stmt->execute();
@@ -44,11 +42,16 @@ if (mysqli_num_rows($result) > 0) {
     $postcode = $row[9];
 }
 
+/**
+ * Get the areas nearby by specifying the postcode.
+ */
 $postcodePlus = $postcode+1;
-
 $postcodeMinus = $postcode-1;
 
-
+/**
+ * Use prepared statements.
+ * If one of the inputs is not filled, search by suburb alone or activity alone.
+ */
 if ($sports == "") {
     $sql = "select * from sports where sports.Postcode = $postcode";
 }
@@ -57,22 +60,19 @@ if ($sports != "" && $suburb != "") {
 }
 $result = $conn->query($sql);
 
-
+/**
+ * If an error occurred, display the error.
+ */
 if (!$result) {
     printf("Error: %s\n", mysqli_error($conn));
     exit();
 }
 
-class Location
-{
-    public $facilityName;
-    public $lat;
-    public $lng;
-    public $sports;
-    public $address;
-    public $condition;
-    public $suburb;
-}
+/**
+ * Declare a Location class to store the data to send back to the client
+ */
+
+require 'Location-class.php';
 
 if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
